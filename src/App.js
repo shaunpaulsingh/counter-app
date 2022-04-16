@@ -9,6 +9,10 @@ class App extends Component {
       { id: 2, value: 0 },
       { id: 3, value: 0 },
       { id: 4, value: 0 },
+      { id: 5, value: 0 },
+      { id: 6, value: 0 },
+      { id: 7, value: 0 },
+      { id: 8, value: 0 },
     ],
   };
 
@@ -48,13 +52,19 @@ class App extends Component {
   render() {
     return (
       <div className="main__wrap">
-        <main className="container">
+        <main className="container box">
           <div className="card__box">
+            <div className="text-center">
+              <h1>Counter App</h1>
+            </div>
             <NavBar
               totalCounters={
                 this.state.counters.filter((c) => c.value > 0).length
               }
             />
+            <div className="text-center">
+              <p>Sample Counter App written in React.</p>
+            </div>
             <Counters
               counters={this.state.counters}
               onReset={this.handleReset}

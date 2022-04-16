@@ -12,7 +12,7 @@ class Counter extends Component {
           </div>
           <div className="">
             <button
-              className="btn btn-secondary"
+              className="btn btn-info"
               onClick={() => this.props.onIncrement(this.props.counter)}
             >
               <i className="fa fa-plus-circle" aria-hidden="true" />

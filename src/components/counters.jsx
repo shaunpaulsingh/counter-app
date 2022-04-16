@@ -8,21 +8,21 @@ class Counters extends Component {
     return (
       <div>
         <div className="row">
-          <div className=''>
+          <div className=' full-width'>
             <button
-              className="btn btn-success m-2"
+              className="btn btn-success m-2 full-width"
               onClick={onReset}
               disabled={counters.length === 0 ? "disabled" : ""}
             >
               <i className="fa fa-refresh" aria-hidden="true" />
             </button>
-            <button
+            {/*<button
               className="btn btn-primary m-2"
               onClick={onRestart}
               disabled={counters.length !== 0 ? "disabled" : ""}
             >
               <i className="fa fa-recycle" aria-hidden="true" />
-            </button>
+            </button>*/}
           </div>
         </div>
         {counters.map((counter) => (
